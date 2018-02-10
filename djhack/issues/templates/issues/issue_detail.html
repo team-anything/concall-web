@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- MAIN CONTENT -->
+    <main>
+        <section>
+            <div class="rad-body-wrapper">
+                <div class="title">
+                    <h2>{{Iss.title}}</h2>
+                </div>
+                <div class="summary">
+                    <h4>Summary</h4>
+                    <p>{{Iss.summary}}</p>
+                </div>
+                <div class="depts">
+                    <h6>Tags-</h6>
+                    <span class="tag stationary">Stationary</span>
+                    <span class="tag electronics">Electronics</span>
+                </div>
+                <div class="Resolve">
+                    <a href="/issues/{{Iss.id}}/remove_issue"><span class="btn btn-danger">Resolve</span></a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
