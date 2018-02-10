@@ -1,0 +1,55 @@
+.rad-body-wrapper
+{
+    background-color: #c3d2ff;
+}
+.title
+{
+    text-align: center;
+    padding: 10px;
+    font-size:2em;
+}
+
+.summary
+{
+    max-height: 70%;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.depts
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.tag {
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.apparel{
+  background-color: darkorange;
+}
+.electronics{
+  background-color: seagreen;
+}
+.stationary{
+  background-color: cadetblue;
+}
+.fitness{
+  background-color: tomato;
+}
+
+.resolve
+{
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  width: 80px;
+  /* margin: auto; */
+  cursor: pointer;
+  right: 10%;
+  margin-top: 10px;
+}
