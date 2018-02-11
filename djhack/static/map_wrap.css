@@ -1,0 +1,12 @@
+.map-wrap
+{
+
+  position: absolute;
+  left: 185px;
+  top: 50px;
+  height:calc(100vh - 50px);
+  width:calc(100vw - 185px);
+  /*background-color: gray;*/
+  right: 0;
+  overflow: auto;
+}

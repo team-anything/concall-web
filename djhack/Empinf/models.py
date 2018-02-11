@@ -8,8 +8,7 @@ class Employee(models.Model):
     total_issues = models.IntegerField(default=0)
     issues_pending = models.IntegerField(default=0)
     avg_rating = models.IntegerField(default=0)
-    # dept = models.ForeignKey(Dept)
-
+    #dept = models.ForeignKey(Dept)
 
 
     def __str__(self):

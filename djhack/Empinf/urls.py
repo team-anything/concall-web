@@ -5,6 +5,7 @@ app_name = 'Empinf'
 
 urlpatterns = [
     url(r'^home/$', views.home, name="home"),
+    url(r'^record/$', views.record, name="record"),
     #url(r'^create/$', views.article_create, name="create"),
     url(r'^(?P<slug>[\w-]+)/$', views.emp_detail, name="detail"),
 ]

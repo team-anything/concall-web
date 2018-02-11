@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block content %}
+        <div class="map-wrap">
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 90%; margin: 0 auto"></div>
+            <div id="container1" style="min-width: 310px; height: 400px; max-width: 90%;margin: 0 auto"></div>
+        </div>
+  <script type="text/javascript">
+    var data1=[{
+        name: 'Resolved',
+        y:{{res}}
+    },
+    {
+        name:'Pending',
+        y:{{pen}}
+    }];
+
+    var data2= [{
+        name: 'Resolved',
+        data: [50, 30, 40, 70]
+    }, {
+        name: 'Pending',
+        data: [20, 20, 30, 20]
+    }];
+
+    var data3= [{
+        name: 'Tech',
+        data: [7, 6, 9, 14, 18, 21, 25, 26, 23, 18, 13, 9]
+    }, {
+        name: 'Electronics',
+        data: [3, 4, 5, 8, 11, 15, 17, 16, 14, 10, 6, 4]
+    }, {
+        name: 'Stationary',
+        data: [10, 6, 12, 8, 5, 13, 11, 1, 0, 20, 11, 13]
+    },{
+        name: 'Fitness',
+        data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    }];
+
+  </script>
+{% endblock %}
