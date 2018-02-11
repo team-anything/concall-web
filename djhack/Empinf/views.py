@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Employee
 from issues.models import Iss
 from django.contrib.auth.decorators import login_required
@@ -7,8 +7,12 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url="/Accounts/login")
 def home(request):
     Employees = Employee.objects.all();
-    return render(request, 'Empinf/home.html', { 'Employees': Employees })
-    #return HttpResponse()
+    employ=request.user.username
+    print(employ)
+    emps = Employee.objects.get(name=employ)
+    iss=Iss.objects.all()
+    string='/Empinf/'+emps.slug
+    return redirect(string)
 
 def emp_detail(request, slug):
     #return HttpResponse(slug)
