@@ -15,7 +15,7 @@
 					<div class="app__body">
 						{% for issue in Iss %}
 							{% if issue.agent == emps and not issue.resolve %}
-							<div class="log log--median">
+							<div class="log log--{{issue.priority}}">
 								<div class="log__header">
 									<a href="/issues/{{issue.issueid}}" class="log__ticket">#{{issue.issueid}}</a>
 									<span class="log__badge">{{issue.complaint_date}}</span>

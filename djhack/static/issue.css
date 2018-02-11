@@ -79,16 +79,16 @@ body {
   border-top: 1px solid #2B3547;
 }
 
-.log--critical {
-  box-shadow: 6px 0 0 #E77A7A inset;
+.log--3 {
+  box-shadow: 16px 0 0 #E77A7A inset;
 }
 
-.log--urgent {
-  box-shadow: 6px 0 0 #F6B07D inset;
+.log--2 {
+  box-shadow: 16px 0 0 #F6B07D inset;
 }
 
-.log--median {
-  box-shadow: 6px 0 0 #11AA22 inset;
+.log--1 {
+  box-shadow: 16px 0 0 #11AA22 inset;
 }
 
 .log__header {
