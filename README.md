@@ -25,6 +25,6 @@ $ pip3 install -r requirements.txt
 - [ ] SMS confirmation on every issue / complaint logged
 - [ ] Offline solution to the problem 
 
-** Note : **
+* Note : *
 
 * This project was done under 24 hours with minimal pre-preparation
